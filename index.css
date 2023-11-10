@@ -1,5 +1,7 @@
 html {
     background-color: #0f0f0f;
+    color: white;
+
     font-family: Roboto, Arial, sans-serif;
 
     max-width: 520px;
@@ -106,4 +108,70 @@ body {
 
     margin: 0px 16px;
     margin-top: 24px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    cursor: pointer;
+    border-radius: 6px;
+
+    transition: background-color 0.2s;
+}
+
+/* TODO: options 버튼 클릭 시에는 options만 하이라이트 되게 */
+.video:active {
+    background-color: #212121;
+}
+
+.video__thumbnail {
+    background-image: url(/data/thumb_static.webp);
+    background-size: contain;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: background-image 0.5s;
+}
+
+.video__thumbnail:hover {
+    background-image: url(/data/thumb_video.webp);
+}
+
+.video__body {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.video__channel {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+}
+
+.video__text_root {
+    display: flex;
+    flex-direction: column;
+}
+
+.video__description {
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+}
+
+.video__options {
+    align-self: baseline;
+
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.video__options:active {
+    background-color: #212121;
 }
