@@ -5,6 +5,8 @@ html {
     font-family: Roboto, Arial, sans-serif;
 
     margin: 0 auto;
+
+    min-width: 350px;
 }
 
 html::-webkit-scrollbar {
@@ -58,9 +60,6 @@ body {
 }
 
 .header__button {
-    background: none;
-    outline: none;
-    border: none;
     padding: 8px 4px;
     
     cursor: pointer;
@@ -104,6 +103,56 @@ body {
     height: 32px;
 
     border-radius: 16px;
+}
+
+.category__root {
+    position: relative;
+}
+
+.category__button__root {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+    
+    margin: 0px 16px;
+    
+    overflow: auto;
+    width: calc(100% - 100px);
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.category__button__root::-webkit-scrollbar {
+    display: none;
+}
+
+.category__button {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 8px 12px;
+
+    cursor: pointer;
+
+    /* 텍스트가 일자로 표시되게.. */
+    /* 어떻게 동작하는지 모르겠음 */
+    white-space: nowrap;
+
+    transition: background-color 0.2s;
+}
+
+.category__button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.category__nav_button {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .content_root {
