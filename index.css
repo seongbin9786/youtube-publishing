@@ -66,6 +66,12 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 500px) {
+    .icon__pc {
+        display: none;
+    }
+}
+
 .header__logo {
     position: relative;
 
