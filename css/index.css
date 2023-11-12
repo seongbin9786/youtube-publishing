@@ -158,7 +158,7 @@
     }
 }
 
-.video {
+.video__root {
     display: flex;
     flex-direction: column;
 
@@ -171,7 +171,7 @@
 }
 
 /* TODO: options 버튼 클릭 시에는 options만 하이라이트 되게 */
-.video:active {
+.video__root:active {
     background-color: #212121;
 }
 
