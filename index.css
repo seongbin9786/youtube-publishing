@@ -32,7 +32,6 @@ body {
 }
 
 .header {
-
     position: sticky;
     top: 0;
     left: 0;
@@ -43,7 +42,7 @@ body {
     align-items: center;
 
     background-color: #0f0f0f;
-    padding-top: 4px;
+    padding-top: 8px;
 }
 
 .header__left {
@@ -56,13 +55,12 @@ body {
     display: flex;
 
     align-items: center;
-    gap: 8px;
 }
 
-.header__button {
-    padding: 8px 4px;
-    
-    cursor: pointer;
+.header__icon__border {
+    padding: 6px 8px;
+
+    border-radius: 50%;
 }
 
 @media (max-width: 500px) {
@@ -74,7 +72,7 @@ body {
 .header__logo {
     position: relative;
 
-    margin-left: 20px;
+    margin-left: 8px;
 }
 
 .header__logo__icon {
@@ -101,6 +99,8 @@ body {
 .header__right__user_profile {
     width: 32px;
     height: 32px;
+    
+    margin: 0 8px;
 
     border-radius: 16px;
 }
@@ -136,23 +136,22 @@ body {
     border-radius: 8px;
     padding: 8px 12px;
 
-    cursor: pointer;
-
     /* 텍스트가 일자로 표시되게.. */
     /* 어떻게 동작하는지 모르겠음 */
     white-space: nowrap;
-
-    transition: background-color 0.2s;
 }
 
-.category__button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.category__nav_button {
+.category__right {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.category__nav_button {
+    color: white;
+    padding: 12px 14px;
+
+    border-radius: 50%;
 }
 
 .content_root {

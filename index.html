@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="index.css">
     <title>YouTube</title>
 </head>
@@ -11,7 +12,9 @@
     <header class="header">
         <div class="header__left">
             <button class="header__button">
-            <img class="header__icon" src="/icons/hamburger.svg" />
+                <div class="header__icon__border bg-white01-on-hover">
+                    <img class="header__icon" src="/icons/hamburger.svg" />
+                </div>
             </button>
             <button class="header__button header__logo">
                 <img class="header__logo__icon"src="/icons/youtube.svg" />
@@ -19,19 +22,21 @@
             </button>
         </div>
         <nav class="header__right">
-            <button class="header__button">
-                <img class="header__icon" src="/icons/glass.svg" />
+            <button>
+                <div class="header__icon__border bg-white01-on-hover">
+                    <img class="header__icon" src="/icons/glass.svg" />
+                </div>
             </button>
-            <button class="header__button icon__pc">
+            <button class="header__icon__border bg-white01-on-hover icon__pc">
                 <img class="header__icon" src="/icons/mic.svg" />
             </button>
-            <button class="header__button icon__pc">
+            <button class="header__icon__border bg-white01-on-hover icon__pc">
                 <img class="header__icon" src="/icons/createVideo.svg" />
             </button>
-            <button class="header__button icon__pc">
+            <button class="header__icon__border bg-white01-on-hover icon__pc">
                 <img class="header__icon" src="/icons/bell.svg" />
             </button>
-            <button class="header__button">
+            <button>
                 <img class="header__right__user_profile" src="/icons/user.jpg"/>
             </button>
         </nav>
@@ -39,16 +44,18 @@
 
     <div class="category__root">
         <div class="category__button__root">
-            <button class="category__button">전체</button>
-            <button class="category__button">실시간</button>
-            <button class="category__button">게임</button>
-            <button class="category__button">음악</button>
-            <button class="category__button">믹스</button>
-            <button class="category__button">최근에 업로드된 동영상</button>
-            <button class="category__button">감상한 동영상</button>
-            <button class="category__button">새로운 맞춤 동영상</button>
+            <button class="category__button bg-white02-on-hover">전체</button>
+            <button class="category__button bg-white02-on-hover">실시간</button>
+            <button class="category__button bg-white02-on-hover">게임</button>
+            <button class="category__button bg-white02-on-hover">음악</button>
+            <button class="category__button bg-white02-on-hover">믹스</button>
+            <button class="category__button bg-white02-on-hover">최근에 업로드된 동영상</button>
+            <button class="category__button bg-white02-on-hover">감상한 동영상</button>
+            <button class="category__button bg-white02-on-hover">새로운 맞춤 동영상</button>
         </div>
-        <button class="category__button category__nav_button"> > </button>
+        <div class="category__right">
+            <button class="category__nav_button bg-white02-on-hover"> > </button>
+        </div>
     </div>
 
     <div class="content_root">
