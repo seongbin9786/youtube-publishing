@@ -9,56 +9,57 @@
     <title>YouTube</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__left">
-            <button class="header__button">
-                <div class="header__icon__border bg-white01-on-hover">
-                    <img class="header__icon" src="/icons/hamburger.svg" />
-                </div>
-            </button>
-            <button class="header__button header__logo">
-                <img class="header__logo__icon"src="/icons/youtube.svg" />
-                <span class="header__logo_location_text" >KR</span>
-            </button>
-        </div>
-        <nav class="header__right">
-            <button>
-                <div class="header__icon__border bg-white01-on-hover">
-                    <img class="header__icon" src="/icons/glass.svg" />
-                </div>
-            </button>
-            <button class="header__icon__border bg-white01-on-hover icon__pc">
-                <img class="header__icon" src="/icons/mic.svg" />
-            </button>
-            <button class="header__icon__border bg-white01-on-hover icon__pc">
-                <img class="header__icon" src="/icons/createVideo.svg" />
-            </button>
-            <button class="header__icon__border bg-white01-on-hover icon__pc">
-                <img class="header__icon" src="/icons/bell.svg" />
-            </button>
-            <button>
-                <img class="header__right__user_profile" src="/icons/user.jpg"/>
-            </button>
+    <header class="header__root">
+        <header class="gnb__root">
+            <nav class="gnb__left">
+                <button class="gnb__button">
+                    <div class="gnb__icon__border bg-white01-on-hover">
+                        <img class="gnb__icon" src="/icons/hamburger.svg" />
+                    </div>
+                </button>
+                <button class="gnb__button gnb__logo">
+                    <img class="gnb__logo__icon"src="/icons/youtube.svg" />
+                    <span class="gnb__logo_location_text" >KR</span>
+                </button>
+            </nav>
+            <nav class="gnb__right">
+                <button>
+                    <div class="gnb__icon__border bg-white01-on-hover">
+                        <img class="gnb__icon" src="/icons/glass.svg" />
+                    </div>
+                </button>
+                <button class="gnb__icon__border bg-white01-on-hover icon__pc">
+                    <img class="gnb__icon" src="/icons/mic.svg" />
+                </button>
+                <button class="gnb__icon__border bg-white01-on-hover icon__pc">
+                    <img class="gnb__icon" src="/icons/createVideo.svg" />
+                </button>
+                <button class="gnb__icon__border bg-white01-on-hover icon__pc">
+                    <img class="gnb__icon" src="/icons/bell.svg" />
+                </button>
+                <button>
+                    <img class="gnb__right__user_profile" src="/icons/user.jpg"/>
+                </button>
+            </nav>
+        </header>
+        <nav class="category__root">
+            <nav class="category__left">
+                <button class="category__button bg-white02-on-hover">전체</button>
+                <button class="category__button bg-white02-on-hover">실시간</button>
+                <button class="category__button bg-white02-on-hover">게임</button>
+                <button class="category__button bg-white02-on-hover">음악</button>
+                <button class="category__button bg-white02-on-hover">믹스</button>
+                <button class="category__button bg-white02-on-hover">최근에 업로드된 동영상</button>
+                <button class="category__button bg-white02-on-hover">감상한 동영상</button>
+                <button class="category__button bg-white02-on-hover">새로운 맞춤 동영상</button>
+            </nav>
+            <nav class="category__right">
+                <button class="category__nav_button bg-white02-on-hover"> > </button>
+            </nav>
         </nav>
     </header>
 
-    <div class="category__root">
-        <div class="category__button__root">
-            <button class="category__button bg-white02-on-hover">전체</button>
-            <button class="category__button bg-white02-on-hover">실시간</button>
-            <button class="category__button bg-white02-on-hover">게임</button>
-            <button class="category__button bg-white02-on-hover">음악</button>
-            <button class="category__button bg-white02-on-hover">믹스</button>
-            <button class="category__button bg-white02-on-hover">최근에 업로드된 동영상</button>
-            <button class="category__button bg-white02-on-hover">감상한 동영상</button>
-            <button class="category__button bg-white02-on-hover">새로운 맞춤 동영상</button>
-        </div>
-        <div class="category__right">
-            <button class="category__nav_button bg-white02-on-hover"> > </button>
-        </div>
-    </div>
-
-    <div class="content_root">
+    <div class="content__root">
         <div class="video">
             <img class="video__thumbnail"></img>
             <div class="video__body">
